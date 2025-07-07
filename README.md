@@ -18,7 +18,6 @@ HAWC App is a comprehensive mobile learning platform built with React Native and
 - Custom themed components with NativeWind/Tailwind CSS
 
 #### 2. **Home/Landing Page** (`app/(tabs)/index.tsx`)
-- Personalized greeting with user name
 - Search bar with navigation to dedicated search page
 - "Discover Top Picks" promotional card
 - Popular lessons horizontal scroll section
@@ -48,7 +47,6 @@ HAWC App is a comprehensive mobile learning platform built with React Native and
 - FlatList implementation for performance
 
 #### 5. **UI/UX Components**
-- Custom themed components (ThemedText, ThemedView)
 - Haptic feedback for tab interactions
 - Vector icons integration (Ionicons, Foundation)
 - Consistent design system with blue accent color (#4285F4)
@@ -87,7 +85,6 @@ HAWC App is a comprehensive mobile learning platform built with React Native and
 - **React Native Vector Icons** for iconography
 
 ### Libraries & Dependencies
-- `react-native-youtube-iframe` - Video playback
 - `react-native-vector-icons` - Icons
 - `expo-font` - Custom fonts
 - `react-native-safe-area-context` - Safe area handling
