@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# HAWC App - Project Documentation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Overview
+HAWC App is a comprehensive mobile learning platform built with React Native and Expo Router, designed to provide users with access to educational courses and learning materials. The app features a modern UI with course discovery, detailed course views, and advanced search functionality.
 
-## Get started
+## Current Development Status
 
-1. Install dependencies
+### ✅ Completed Features
 
-   ```bash
-   npm install
-   ```
+#### 1. **App Structure & Navigation**
+- Expo Router-based navigation with file-based routing
+- Tab-based navigation with 4 main sections:
+  - Home (Landing page)
+  - Education 
+  - Documents
+  - Profile
+- Stack navigation for course details and search
+- Custom themed components with NativeWind/Tailwind CSS
 
-2. Start the app
+#### 2. **Home/Landing Page** (`app/(tabs)/index.tsx`)
+- Search bar with navigation to dedicated search page
+- "Discover Top Picks" promotional card
+- Popular lessons horizontal scroll section
+- Course cards with:
+  - Like/unlike functionality
+  - Rating display
+  - Duration and lesson count
+  - Course thumbnails
+- Responsive design with custom styling
 
-   ```bash
-   npx expo start
-   ```
+#### 3. **Course Details Page** (`app/course/[courseId].jsx`)
+- Dynamic routing with course ID parameters
+- Course information display (title, duration, lessons, rating)
+- Tabbed interface (Lessons/Description)
+- Lesson list with play indicators
+- Enrollment section with pricing
+- Interactive video player with thumbnail fallback
 
-In the output, you'll find options to open the app in a
+#### 4. **Search Page** (`app/search/index.jsx`)
+- Full-text search functionality
+- Category-based filtering with toggleable tags
+- Comprehensive course catalog 
+- Advanced filtering system
+- Like/unlike functionality for courses
+- Active selection states
+- FlatList implementation for performance
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+#### 5. **UI/UX Components**
+- Custom themed components (ThemedText, ThemedView)
+- Haptic feedback for tab interactions
+- Vector icons integration (Ionicons, Foundation)
+- Consistent design system with blue accent color (#4285F4)
+- Responsive layouts for different screen sizes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🔄 In Progress / Placeholder Pages
+- **Education Tab**: Basic structure created
+- **Documents Tab**: Basic structure created  
+- **Profile Tab**: Basic structure created
 
-## Get a fresh project
+### 📋 Pending Features
+1. **Backend Integration**
+   - API endpoints for course data
+   - User authentication system
+   - Course enrollment functionality
+   - Progress tracking
 
-When you're ready, run:
+2. **Authentication System**
+   - User registration/login
+   - Profile management
+   - Session management
 
-```bash
-npm run reset-project
-```
+3. **Additional Features**
+   - Course progress tracking
+   - Bookmarks/Favorites
+   - Offline course downloads
+   - Push notifications
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Technical Stack
 
-## Learn more
+### Frontend
+- **React Native** with Expo SDK
+- **Expo Router** for navigation
+- **NativeWind** for styling (Tailwind CSS)
+- **TypeScript** for type safety
+- **React Native Vector Icons** for iconography
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
